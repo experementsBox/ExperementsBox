@@ -1,0 +1,14 @@
+{
+    "experement_name":{
+        "title": "title",
+        "text": "text",
+        "photos_links":[
+            "link1",
+            "link2"
+        ],
+        "video_links":[
+            "link1",
+            "link2"
+        ]
+    }
+}

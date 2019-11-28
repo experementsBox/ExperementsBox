@@ -1,4 +1,7 @@
+
+
 function pasteExperement(){
-    leftmenuelem = document.getElementById("block-menu");
-    maininfoelem = document.getElementById();
+    leftmenuelem = document.getElementById("block-menu").getElementsByClassName("ul");
+    maininfoelem = document.getElementById("right");
+
 }
