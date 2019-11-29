@@ -35,7 +35,7 @@ a:hover {
 #top-menu {
     width: 950px;
     height: 64px;
-    background: #4c281e url(images/m1.png) repeat-x;
+    background: #4c281e repeat-x;
     padding: 0 0 0 10px;
     box-shadow: 10px 10px #ff9c00;
 }
@@ -49,7 +49,7 @@ a:hover {
 
 #top-menu ul li {
     float: left;
-    background: url(images/m2.png) no-repeat right center;
+    background: no-repeat right center;
     padding: 0 2px 0 0;
 }
 
@@ -63,8 +63,8 @@ a:hover {
 }
 
 #top-menu ul li:hover {
-    color: #fff;
-    background: #0c1783;
+    color: #4c281e;
+    background: #ff9c00;
 }
 
 
@@ -99,6 +99,7 @@ a:hover {
     width: 240px;
     background: #4c281e;
     box-shadow: 5px 5px #ff9c00;
+    color: #ff9c00;
 }
 
 #block-menu ul {
@@ -110,14 +111,14 @@ a:hover {
 #block-menu ul li{
     display: block;
     width: 195px;
-    color: #fff;
     text-decoration: none;
     padding: 10px 5px 10px 40px;
     background: url(images/marker.png) no-repeat 10px 8px;
 }
 
-#block-menu ul li:hover {
-    background: darkgreen url(images/marker.png) no-repeat 10px 8px;
+#block-menu ul li#clickable:hover {
+    background: #ff9c00 url(images/marker.png) no-repeat 10px 8px;
+    color: #4c281e;
 }
 
 

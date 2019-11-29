@@ -61,8 +61,10 @@ function createMenu(){
         l.innerHTML = sourcefile[key]["title"];
         oncl = "pasteExperement('" + key + "')";
         l.setAttribute("onclick",oncl);
+        l.setAttribute("id","clickable");
         leftmenuelem.appendChild(l);
-    }
+    };
+    leftmenuelem.appendChild(document.createElement('li'));
 }
 
 function pasteExperement(elem){
