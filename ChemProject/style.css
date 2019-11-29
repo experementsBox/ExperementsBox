@@ -53,7 +53,7 @@ a:hover {
     padding: 0 2px 0 0;
 }
 
-#top-menu ul li a {
+#top-menu ul li{
     display: block;
     height: 40px;
     padding: 24px 27px 0 27px;
@@ -62,7 +62,7 @@ a:hover {
     text-transform: uppercase;
 }
 
-#top-menu ul li a:hover {
+#top-menu ul li:hover {
     color: #fff;
     background: #0c1783;
 }
@@ -107,7 +107,7 @@ a:hover {
     list-style: none;
 }
 
-#block-menu ul li a {
+#block-menu ul li{
     display: block;
     width: 195px;
     color: #fff;
@@ -116,7 +116,7 @@ a:hover {
     background: url(images/marker.png) no-repeat 10px 8px;
 }
 
-#block-menu ul li a:hover {
+#block-menu ul li:hover {
     background: darkgreen url(images/marker.png) no-repeat 10px 8px;
 }
 
