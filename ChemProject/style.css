@@ -15,7 +15,12 @@ body {
 }
 
 img {
-    border: 1;
+    width: 690px;
+}
+
+embed{
+    width: 690px;
+    height: 380px;
 }
 
 a:hover {
@@ -113,11 +118,11 @@ a:hover {
     width: 195px;
     text-decoration: none;
     padding: 10px 5px 10px 40px;
-    background: url(images/marker.png) no-repeat 10px 8px;
+    background: no-repeat 10px 8px;
 }
 
 #block-menu ul li#clickable:hover {
-    background: #ff9c00 url(images/marker.png) no-repeat 10px 8px;
+    background: #ff9c00 no-repeat 10px 8px;
     color: #4c281e;
 }
 
