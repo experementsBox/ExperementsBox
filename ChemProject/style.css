@@ -35,6 +35,14 @@ a:hover {
     height: 70px
 }
 
+#head-site img {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 50%;
+    margin: 0 auto;
+}
+
 /*Верхнее меню сайта*/
 
 #top-menu {

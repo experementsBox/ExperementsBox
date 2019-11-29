@@ -4,27 +4,25 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>ExperimentBox</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
     <script src="script.js"></script>
 </head>
 
-<body onload="createMenu()">
+<body onload="createPageForExperiments()">
     <div id="basic">
         <div id="head-site">
-            <h1 style="margin-left:10%; float:left">ExperimentBox (c)2019</h1>
-            <h1 style="margin-right:10%; float:right">Ополалао</h1>
+            <!-- <h2 style=" display: flex; justify-content: center; align-items: center">ExperimentBox (c)2019</h2> -->
+            <img src="head.png">
         </div>
             <div id="top-menu">
                 <ul>
-                    <li>О нас</li>
-                    <li>Ассортимент(магаз)</li>
-                    <li>Отзывы</li>
-                    <li>Видеоопыты</li>
+                    <li onclick="createPageForExperiments()">Опыты</li>
+                    <li onclick="createPageAbout()">О нас</li>
                 </ul>
             </div>
         <div id="content">
             <div id="right">
-                
             </div>
             <div id="block-menu">
                 <ul id="inmenu">
