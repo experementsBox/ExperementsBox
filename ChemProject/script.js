@@ -24,11 +24,15 @@ experimentsInfo = {
 aboutInfo = {
     "project":{
         "title": "Про ExperimentBox",
-        "text": "<h3>Проект ExprerimentBox создан для привлечения интересов детей и взрослых путем 'красивой' подачи информации</h3><h5>Наш сайт предостовляет пользователю текстровую информации, фото и видеоматериалы про эксперементы</h5>"
+        "text": "<h3>Проект ExprerimentBox создан для привлечения интересов детей и взрослых путем 'красивой' подачи информации</h3><h5>Наш сайт предостовляет пользователю текстровую информации, фото и видеоматериалы про эксперементы</h5>",
     },
     "solving":{
         "title": "Решение",
-        "text": "<h3>На данный момент создан сайт воплощающий наши желания в реальность</h3><h5>В планах на будещее: создание мобильного приложения на Android и IOS, и модернизация сайта</h5>"
+        "text": "<h3>На данный момент создан сайт воплощающий наши желания в реальность</h3><h5>В планах на будещее: создание мобильного приложения на Android и IOS, и модернизация сайта</h5>",
+    },
+    "members":{
+        "title": "Участники",
+        "text": "<h3>Все участники ученики 7 класса</h3><h5>Лызинцев Женя - фронтэнд, Проскуряков Дима - бэкэндер</h5>",
     }
 }
 
@@ -37,7 +41,7 @@ maininfoelem = document.getElementById("right");
 
 function createPageForExperiments(){
     leftmenuelem.innerHTML = " ";
-    maininfoelem.innerHTML = "<h2>Нажмите на опыт справа чтобы просмотреть его</h2>";
+    maininfoelem.innerHTML = "<h2>Нажмите на опыт слева чтобы просмотреть его</h2>";
     for(var key in experimentsInfo){
         var l = document.createElement("li");
         l.innerHTML = experimentsInfo[key]["title"];
@@ -49,9 +53,19 @@ function createPageForExperiments(){
     leftmenuelem.appendChild(document.createElement("li"));
 };
 
-// function createPageAbout(){
-    
-// }
+function createPageAbout(){
+    leftmenuelem.innerHTML = " ";
+    maininfoelem.innerHTML = "<h2>Нажмите на вкладку слева чтобы просмотреть информацию</h2>";
+    for(var key in aboutInfo){
+        var l = document.createElement("li");
+        l.innerHTML = aboutInfo[key]["title"];
+        oncl = "pasteInfo('" + key + "')";
+        l.setAttribute("onclick",oncl);
+        l.setAttribute("id","clickable");
+        leftmenuelem.appendChild(l);
+    };
+    leftmenuelem.appendChild(document.createElement("li"));
+}
 
 function pasteExperement(elem){
     var h = document.createElement("h1");
@@ -60,3 +74,11 @@ function pasteExperement(elem){
     maininfoelem.appendChild(h);
     maininfoelem.innerHTML += experimentsInfo[elem]["text"];
 };
+
+function pasteInfo(page){
+    var h = document.createElement("h1");
+    h.innerHTML = aboutInfo[page]["title"];
+    maininfoelem.innerHTML = " ";
+    maininfoelem.appendChild(h);
+    maininfoelem.innerHTML += aboutInfo[page    ]["text"];
+}
