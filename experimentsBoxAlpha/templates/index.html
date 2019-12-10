@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
     <title>ExperimentBox</title>
     <link rel="shortcut icon" href="{{url_for('static', filename='logo.png')}}" type="image/png">
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Rubik&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="createPageForExperiments()">
+    <div id="basic">
+        <img id="head-site" src="{{url_for('static', filename='head.png')}}">
+            <div id="top-menu">
+                <ul>
+                    <li onclick="createPageForExperiments()">Опыты</li>
+                    <li onclick="createPageAbout()">О нас</li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="right">
+                </div>
+                <div id="block-menu">
+                    <ul id="inmenu">
+                    </ul>
+                </div>
+            </div>
+            <div class="downdiv"></div>
+        </div>
     <script src="{{url_for('static', filename='script.js')}}"></script>
 </body>
 </html>
