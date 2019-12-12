@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Rubik&display=swap" rel="stylesheet">
 </head>
-<body onload="createPageForExperiments()">
+<body onload="init({{contexp}},{{contabo}})">
     <div id="basic">
         <img id="head-site" src="{{url_for('static', filename='head.png')}}">
             <div id="top-menu">
