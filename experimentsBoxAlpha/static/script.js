@@ -1,8 +1,6 @@
 leftmenuelem = document.getElementById("inmenu");
 maininfoelem = document.getElementById("right");
 
-"<img src={{url_for('static',filename='pharaoh1.jpg}}')}>"
-
 function init(contex,contab){
     window.experimentsInfo = contex;
     window.aboutInfo = contab;
@@ -44,7 +42,8 @@ function pasteExperement(elem){
     maininfoelem.innerHTML += window.experimentsInfo[elem]["text"];
     if (window.experimentsInfo[elem]["imgatr"] != null){
         for(var key = 0; key < window.experimentsInfo[elem]["imgatr"].length; key++){
-            maininfoelem.innerHTML += "<img src={{url_for('static', filename='${window.experimentsInfo[elem]['imgatr'][key]}')}}>"
+            var imgstr = `<img src=/static/'${window.experimentsInfo[elem]['imgatr'][key]}' width=690>`;
+            maininfoelem.innerHTML += imgstr.replace('\'','').replace('\'','');
         }
     };
 };
