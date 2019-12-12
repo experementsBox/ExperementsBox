@@ -42,7 +42,7 @@ function pasteExperement(elem){
     maininfoelem.innerHTML += window.experimentsInfo[elem]["text"];
     if (window.experimentsInfo[elem]["imgatr"] != null){
         for(var key = 0; key < window.experimentsInfo[elem]["imgatr"].length; key++){
-            var imgstr = `<img src=/static/'${window.experimentsInfo[elem]['imgatr'][key]}' width=690>`;
+            var imgstr = `<img src=/static/'${window.experimentsInfo[elem]['imgatr'][key]}' class=mediacon>`;
             maininfoelem.innerHTML += imgstr.replace('\'','').replace('\'','');
         }
     };
