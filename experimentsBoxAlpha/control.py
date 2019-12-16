@@ -2,7 +2,10 @@
 from flask import Flask
 from flask import render_template
 import json
+
+
 app = Flask(__name__)
+
 
 experimentsInfo = {
     "pharaoh":{
@@ -53,8 +56,8 @@ aboutInfo = {
 }
 
 @app.route('/', methods=['GET', 'POST'])
-def hello_world():
-    return render_template('index.html', contabo=json.dumps(aboutInfo),contexp=json.dumps(experimentsInfo))
+def setupwindow():
+    return render_template('index.html', contabo=json.dumps(aboutInfo,ensure_ascii=True),contexp=json.dumps(experimentsInfo))
 
 if __name__ == '__main__':
     app.run()

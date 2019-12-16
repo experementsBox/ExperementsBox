@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>ExperimentBox</title>
-    <link rel="shortcut icon" href="{{url_for('static', filename='logo.png')}}" type="image/png">
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css"/>
+    <link rel="shortcut icon" href="static/media/logo.png" type="image/png">
+    <link rel="stylesheet" href="static/style.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Rubik&display=swap" rel="stylesheet">
 </head>
 <body onload="init({{contexp}},{{contabo}})">
     <div id="basic">
-        <img id="head-site" src="{{url_for('static', filename='head.png')}}">
+        <img id="head-site" src="static/media/head.png">
             <div id="top-menu">
                 <ul>
                     <li onclick="createPageForExperiments()">Опыты</li>
@@ -25,6 +25,6 @@
             </div>
             <div class="downdiv"></div>
         </div>
-    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script src="static/script.js"></script>
 </body>
 </html>

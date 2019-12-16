@@ -17,7 +17,6 @@ function createPageForExperiments(){
         l.setAttribute("id","clickable");
         leftmenuelem.appendChild(l);
     };
-    leftmenuelem.appendChild(document.createElement("li"));
 };
 
 function createPageAbout(){
@@ -31,7 +30,6 @@ function createPageAbout(){
         l.setAttribute("id","clickable");
         leftmenuelem.appendChild(l);
     };
-    leftmenuelem.appendChild(document.createElement("li"));
 }
 
 function pasteExperement(elem){
@@ -42,7 +40,7 @@ function pasteExperement(elem){
     maininfoelem.innerHTML += window.experimentsInfo[elem]["text"];
     if (window.experimentsInfo[elem]["imgatr"] != null){
         for(var key = 0; key < window.experimentsInfo[elem]["imgatr"].length; key++){
-            var imgstr = `<img src=/static/'${window.experimentsInfo[elem]['imgatr'][key]}' class=mediacon>`;
+            var imgstr = `<img src=static/media/'${window.experimentsInfo[elem]['imgatr'][key]}' class=mediacon>`;
             maininfoelem.innerHTML += imgstr.replace('\'','').replace('\'','');
         }
     };

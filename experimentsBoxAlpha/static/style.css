@@ -1,15 +1,16 @@
 /* Тело */
-body { 
+body {
+    height: 100%; 
     padding: 0px;
     margin: 0;
-    background: #4c281e;
+    background: #d3d3d3;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
 }
 /* Базовый блок страницы */
 #basic {
     width: 960px;
-    min-height: 500px;
+    min-height: 100%;
     margin: 0 auto;
     padding: 20px 20px 20px 20px;
     background: white;
@@ -34,14 +35,14 @@ body {
 /* Верхнее меню */
 #top-menu {
     width: 950px;
-    height: 64px;
-    background: #4c281e repeat-x;
+    height: 128px;
+    background: #e6ffff repeat-x;
     padding: 0 0 0 10px;
-    box-shadow: 10px 10px #ff9c00;
 }
 
 /* ul верхнего меню */
 #top-menu ul {  
+    height: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -52,17 +53,16 @@ body {
     float: left;
     background: no-repeat right center;
     display: block;
-    height: 40px;
+    height: 100%;
     padding: 24px 27px 0 27px;
-    color: #ff9c00;
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 /* Наведение на li ul'a верхнего меню */
 #top-menu ul li:hover {
-    color: #4c281e;
-    background: #ff9c00;
+    background: #b3ffff;
 }
 
 /* Блок контенка страницы */
@@ -82,7 +82,6 @@ body {
 /* Заголовки в информационном блоке */
 #right h1 {
     text-transform: uppercase;
-    color: #4c281e;
     font-weight: normal;
     margin-top: 0;
 }
@@ -90,9 +89,8 @@ body {
 /* Меню эксперементов */
 #block-menu {
     width: 240px;
-    background: #4c281e;
-    box-shadow: 5px 5px #ff9c00;
-    color: #ff9c00;
+    background: #e6ffff;
+    color: #000000;
 }
 
 /* ul меню эксперементов */
@@ -113,8 +111,7 @@ body {
 
 /* Наведение на li ul'a меню эксперементов */
 #block-menu ul li#clickable:hover {
-    background: #ff9c00 no-repeat 10px 8px;
-    color: #4c281e;
+    background: #b3ffff no-repeat 10px 8px;
 }
 
 /* Корректор низа */
