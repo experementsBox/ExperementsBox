@@ -4,10 +4,10 @@
 <head>
     <title>Experiments Page</title>
     <link rel="shortcut icon" href="static/media/logo.png" type="image/png">
-    <link rel="stylesheet" href="static/aboutPage/style.css" type="text/css" />
+    <link rel="stylesheet" href="static/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Rubik&display=swap" rel="stylesheet">
 </head>             
-<body onload="init()">
+<body onload="init(); createPageForInfo()">
     <div id="basic">
         <img onclick="window.open('/main', '_self')" id="head-site" src="static/media/head.png">
         <div id="content">
@@ -20,6 +20,6 @@
         </div>
         <div class="downdiv"></div>
     </div>
-    <script src="static/aboutPage/script.js"></script>
+    <script src="static/script.js"></script>
 </body>
 </html>

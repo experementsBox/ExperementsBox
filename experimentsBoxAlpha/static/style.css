@@ -52,6 +52,11 @@ body {
     text-transform: uppercase;
 }
 
+/* Наведение на li ul'a верхнего меню */
+#top-menu ul li:hover {
+    background: #b3ffff;
+}
+
 #about{
     padding: 54px 68px 54px 68px;
     margin: 0 68px 0px 68px;
@@ -67,10 +72,60 @@ body {
     margin: 0 29px 0px 29px;
 }
 
-/* Наведение на li ul'a верхнего меню */
-#top-menu ul li:hover {
-    background: #b3ffff;
+/* Класс медиа-контента */
+.mediacon {
+    width: 690px;
 }
+
+/* Блок контента страницы */
+#content {
+    width: 960px;
+    padding: 20px 0 0 0;
+}
+
+/* Информационный блок */
+#main {
+    float: right;
+    width: 690px;
+    padding: 0 0 0 20px;
+    text-align: justify;
+}
+
+/* Заголовки в информационном блоке */
+#main h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+/* Меню эксперементов */
+#menu {
+    width: 240px;
+    background: #e6ffff;
+    color: #000000;
+}
+
+/* ul меню эксперементов */
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* li ul'а меню эксперементов */
+#menu ul li{
+    display: block;
+    width: 195px;
+    text-decoration: none;
+    padding: 10px 5px 10px 40px;
+    background: no-repeat 10px 8px;
+}
+
+/* Наведение на li ul'a меню эксперементов */
+#menu ul li#clickable:hover {
+    background: #b3ffff no-repeat 10px 8px;
+}
+
 
 /* Корректор низа */
 .downdiv {
