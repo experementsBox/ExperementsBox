@@ -27,11 +27,6 @@ body {
     margin: 0 auto;
 }
 
-/* Класс медиа-контента */
-.mediacon {
-    width: 690px;
-}
-
 /* Верхнее меню */
 #top-menu {
     width: 950px;
@@ -75,55 +70,6 @@ body {
 /* Наведение на li ul'a верхнего меню */
 #top-menu ul li:hover {
     background: #b3ffff;
-}
-
-/* Блок контенка страницы */
-#content {
-    width: 960px;
-    padding: 20px 0 0 0;
-}
-
-/* Информационный блок */
-#right {
-    float: right;
-    width: 690px;
-    padding: 0 0 0 20px;
-    text-align: justify;
-}
-
-/* Заголовки в информационном блоке */
-#right h1 {
-    text-transform: uppercase;
-    font-weight: normal;
-    margin-top: 0;
-}
-
-/* Меню эксперементов */
-#block-menu {
-    width: 240px;
-    background: #e6ffff;
-    color: #000000;
-}
-
-/* ul меню эксперементов */
-#block-menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* li ul'а меню эксперементов */
-#block-menu ul li{
-    display: block;
-    width: 195px;
-    text-decoration: none;
-    padding: 10px 5px 10px 40px;
-    background: no-repeat 10px 8px;
-}
-
-/* Наведение на li ul'a меню эксперементов */
-#block-menu ul li#clickable:hover {
-    background: #b3ffff no-repeat 10px 8px;
 }
 
 /* Корректор низа */

@@ -14,7 +14,7 @@ with open('about.json', 'r', encoding="utf-8") as aboutFile, open('experiments.j
 @app.route('/getExperimentsInfo', methods=['GET','POST'])
 def giveexperimentsinfo():
     return json.dumps(experimentsInfo, ensure_ascii = False)
-    
+
 
 @app.route('/getAboutInfo', methods=['GET','POST'])
 def giveabouteinfo(): 

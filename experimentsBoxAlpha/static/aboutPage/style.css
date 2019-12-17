@@ -32,51 +32,6 @@ body {
     width: 690px;
 }
 
-/* Верхнее меню */
-#top-menu {
-    width: 950px;
-    height: 127px;
-    background: #e6ffff repeat-x;
-}
-
-/* ul верхнего меню */
-#top-menu ul {  
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* li ul'а верхнего меню */
-#top-menu ul li {
-    float: left;
-    background: no-repeat right center;
-    display: block;
-    color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#about{
-    padding: 54px 68px 54px 68px;
-    margin: 0 68px 0px 68px;
-}
-
-#exp{
-    padding: 54px 66px 54px 66px;
-    margin: 0 66px 0px 66px;
-}
-
-#chemcalc{
-    padding: 54px 29px 54px 29px;
-    margin: 0 29px 0px 29px;
-}
-
-/* Наведение на li ul'a верхнего меню */
-#top-menu ul li:hover {
-    background: #b3ffff;
-}
-
 /* Блок контенка страницы */
 #content {
     width: 960px;
