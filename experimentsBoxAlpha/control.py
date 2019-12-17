@@ -17,7 +17,7 @@ def giveexperimentsinfo():
     
 
 @app.route('/getAboutInfo', methods=['GET','POST'])
-def giveabouteinfo():
+def giveabouteinfo(): 
     return json.dumps(aboutInfo, ensure_ascii = False)
 
 
