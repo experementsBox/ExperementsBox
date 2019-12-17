@@ -6,12 +6,23 @@ body {
     background: #d3d3d3;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
+    overflow-y: scroll;
 }
+
 /* Базовый блок страницы */
 #basic {
-    width: 960px;
+    width: 95%;
     min-height: 100%;
     margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    background: white;
+}
+
+#mainpagebasic {
+    width: 95%;
+    min-height: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
     padding: 20px 20px 20px 20px;
     background: white;
 }
@@ -23,15 +34,14 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    width: 50%;
     margin: 0 auto;
 }
 
 /* Верхнее меню */
 #top-menu {
+    margin-top: 20px;
     width: 950px;
     height: 127px;
-    background: #e6ffff repeat-x;
 }
 
 /* ul верхнего меню */
@@ -45,7 +55,7 @@ body {
 /* li ul'а верхнего меню */
 #top-menu ul li {
     float: left;
-    background: no-repeat right center;
+    background: #e6ffff repeat-x;
     display: block;
     color: #000000;
     text-decoration: none;
@@ -55,6 +65,7 @@ body {
 /* Наведение на li ul'a верхнего меню */
 #top-menu ul li:hover {
     background: #b3ffff;
+    box-shadow: 0px  -10px #d3d3d3;
 }
 
 #about{
@@ -122,8 +133,9 @@ body {
 }
 
 /* Наведение на li ul'a меню эксперементов */
-#menu ul li#clickable:hover {
-    background: #b3ffff no-repeat 10px 8px;
+#menu ul li:hover {
+    background: #b3ffff;
+    box-shadow: -10px 0px #d3d3d3;
 }
 
 
