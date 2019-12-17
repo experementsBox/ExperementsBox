@@ -19,7 +19,7 @@ function createPageForExperiments(){
     for(var key in window.experimentsInfo){
         var l = document.createElement("li");
         l.innerHTML = window.experimentsInfo[key]["title"];
-        oncl = "pasteExperement('" + key + "')";
+        oncl = "pasteExperiment('" + key + "')";
         l.setAttribute("onclick",oncl);
         l.setAttribute("id","clickable");
         leftmenuelem.appendChild(l);
