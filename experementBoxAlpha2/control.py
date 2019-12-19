@@ -10,6 +10,7 @@ app = Flask(__name__)
 with open('about.json', 'r', encoding="utf-8") as aboutFile, open('experiments.json', 'r', encoding="utf-8") as experimentsFile:
     aboutInfo = json.loads(aboutFile.read())
     experimentsInfo = json.loads(experimentsFile.read())
+    print(experimentsInfo)
 
 @app.route('/getExperimentsInfo', methods=['GET','POST'])
 def giveexperimentsinfo():
@@ -30,10 +31,6 @@ def setupwindow():
 def experiments():
     return render_template('experimentsPage.html')
 
-
-@app.route('/about', methods=['GET', 'POST'])
-def about():
-    return render_template('aboutPage.html')
 
 @app.route('/gethead', methods=['GET', 'POST'])
 def givehead():
