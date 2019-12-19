@@ -35,6 +35,10 @@ def experiments():
 def about():
     return render_template('aboutPage.html')
 
+@app.route('/gethead', methods=['GET', 'POST'])
+def givehead():
+    return render_template('header.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

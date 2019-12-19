@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Experiments Page</title>
+    <title>Experiments page</title>
     <link rel="shortcut icon" href="static/media/logo.png" type="image/png">
     <link rel="stylesheet" href="static/style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Rubik&display=swap" rel="stylesheet">
+    <script src="static/jquery.js"></script>
+    <script>$(function(){$("#head").load("gethead");});</script> 
 </head>             
 <body onload="init(); createPageForInfo()">
+    <div id="head"></div>
     <div id="basic">
-        <img onclick="window.open('/main', '_self')" id="head-site" src="static/media/head.png">
         <div id="content">
             <div id="main">
             </div>
