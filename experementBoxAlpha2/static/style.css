@@ -23,11 +23,13 @@ header #headlogo{
 
 header #links{
     float: left;
-    position: absolute; 
-    left: 50%;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
-    grid-column-gap: 5%;
+    grid-template-columns: 1fr 1fr 1fr 6fr;
+    height: auto;
+}
+
+header #links .link{
+    vertical-align: bottom;
 }
 
 ::-webkit-scrollbar {
