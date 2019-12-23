@@ -7,18 +7,17 @@ import json
 app = Flask(__name__)
 
 
-with open('about.json', 'r', encoding="utf-8") as aboutFile, open('experiments.json', 'r', encoding="utf-8") as experimentsFile:
-    aboutInfo = json.loads(aboutFile.read())
-    experimentsInfo = json.loads(experimentsFile.read())
-    print(experimentsInfo)
-
 @app.route('/getExperimentsInfo', methods=['GET','POST'])
 def giveexperimentsinfo():
+    with open('experiments.json', 'r', encoding="utf-8") as experimentsFile:
+        experimentsInfo = json.loads(experimentsFile.read())
     return json.dumps(experimentsInfo, ensure_ascii = False)
 
 
 @app.route('/getAboutInfo', methods=['GET','POST'])
 def giveabouteinfo(): 
+    with open('about.json', 'r', encoding="utf-8") as aboutFile:
+        aboutInfo = json.loads(aboutFile.read())
     return json.dumps(aboutInfo, ensure_ascii = False)
 
 

@@ -1,5 +1,5 @@
 leftmenuelem = document.getElementById("menu");
-maininfoelem = document.getElementById("main");
+maininfoelem = document.getElementById("text");
 
 function init(){
     var xhr = new XMLHttpRequest();
@@ -14,15 +14,20 @@ function init(){
 }
 
 function insertText(fromDict){
-    return "<h1>" + fromDict["title"] + "</h1>" + fromDict["text"];
+    var text = "";
+    if (fromDict["text"] != null){
+        for(var key = 0; key < fromDict["text"].length; key++){
+            text += `<p>${fromDict['text'][key]}</p>`;
+        };
+    };
+    return `<h1>${fromDict['title']}</h1><h3>${fromDict['intro']}</h3>${text}`;
 }
 
 function insertImage(fromDict){
     var prereturn = "";
     if (fromDict["imgatr"] != null){
         for(var key = 0; key < fromDict["imgatr"].length; key++){
-            var imgstr = `<img src=static/media/'${fromDict['imgatr'][key]}' class=mediacon>`;
-            prereturn += imgstr.replace('\'','').replace('\'','');
+            prereturn += `<img src=static/media/${fromDict['imgatr'][key]} class=mediacon>`;
         };
     };
     return prereturn;
