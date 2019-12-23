@@ -11,15 +11,10 @@
     background: #606060;
 }
 
-html{
-    height: 100%;
-}
-
 body {
-    height: 100%;
     margin: 0;
     background: #E6E6E6;
-    font-size: 14px;
+    font-size: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -32,8 +27,8 @@ header{
     height: 64px
 }
 
-header #headlogo{
-    height: 100%;
+header a img{
+    height: 64px !important;
     border-radius: 50%;
 }
 
@@ -47,6 +42,18 @@ header #links{
 header #links .link{
     display: flex;
     align-items: center;
+}
+
+header a:link{
+    color: #FFFFC0
+}
+
+header a:hover{
+    color: #FFFFC0
+}
+
+header a:visited{
+    color: #FFFFC0
 }
 
 #menu{
@@ -73,11 +80,11 @@ header #links .link{
 
 #main{
     overflow-y: auto;
-    margin: 5% 5% 0 5%;
-    height: calc(100vh - 64px);
+    margin: 5% 5% 5% 5%;
+    height: calc(100vh - 64px - 10%);
     float: right;
     width: 70%;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 #main h1{
