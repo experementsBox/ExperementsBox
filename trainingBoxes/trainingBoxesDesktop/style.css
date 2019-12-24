@@ -1,0 +1,87 @@
+::-webkit-scrollbar {
+    width: 1%;
+    background: #D4D4D4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A6A6A6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #606060;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background: #404050;
+    color: #FFFFC0;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-column-gap: 20%;
+    height: 64px
+}
+
+header #headlogolink{
+    width: 64px !important;
+}
+
+header a img{
+    height: 64px !important;
+    border-radius: 50%;
+}
+
+header #links{
+    float: left;
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr 9fr;
+    height: 100%;
+}
+
+header #links a{
+    display: flex;
+    align-items: center;
+}
+
+header #links a:link,
+header #links a:visited,
+header #links a:hover{
+    color: #FFFFC0;
+}
+
+#menu{
+    overflow-y: auto;
+    width: 20%;
+    height: calc(100vh - 64px);
+    float: left;
+    background: white;
+    color: #404050;
+}
+
+#clickable{
+    padding: 8%;
+    border-bottom: 1px solid #404050;
+}
+
+#clickable:hover{
+    background: #C0C0C0;
+}
+
+.mediacon{
+    max-width: 50%;
+}
+
+#main{
+    width: 80%;
+    overflow-y: auto;
+    height: calc(100vh - 64px);
+    float: right;
+    background: #E6E6E6;
+}
+
+#text{
+    margin: 0 5% 0 5%;
+}
